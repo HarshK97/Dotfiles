@@ -5,6 +5,7 @@ A Transformers-themed Arch Linux setup with Hyprland compositor
 ![Screenshot](Screenshots/TransformerArch1.png) <!-- Add your screenshot here -->
 ![Screenshot](Screenshots/TransformerArch2.png)
 ![Screenshot](Screenshots/TransformerArch3.png)
+![Screenshot](Screenshots/TransformerArch4.png)
 
 ## Description
 
