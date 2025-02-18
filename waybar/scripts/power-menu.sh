@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-config="$HOME/.config/rofi/power-menu.rasi"
+config="$HOME/.config/mechabar-rofi/power-menu.rasi"
 
 actions=$(echo -e "  Lock\n  Shutdown\n  Reboot\n  Suspend\n  Hibernate\n  Logout")
 

@@ -4,7 +4,7 @@
 # GitHub: https://github.com/sejjy/mechabar
 
 # Rofi config
-config="$HOME/.config/rofi/wifi-menu.rasi"
+config="$HOME/.config/mechabar-rofi/wifi-menu.rasi"
 
 options=$(
   echo "Manual Entry"
