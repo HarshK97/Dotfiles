@@ -7,11 +7,11 @@
 /* Main Colors */
 
 @define-color main-fg #cad3f5;
-@define-color main-bg #24273a;
+@define-color main-bg #181721;
 @define-color main-br #cad3f5;
 
-@define-color active-bg #8aadf4;
-@define-color active-fg #24273a;
+@define-color active-bg #5670BF;
+@define-color active-fg #D3D3D3;
 
 @define-color hover-bg #363a4f;
 @define-color hover-fg rgba(202, 211, 245, 0.75);
@@ -21,22 +21,22 @@
 
 /* Module Colors */
 
-@define-color module-fg #f4dbd6;
-@define-color workspaces #1e2030;
+@define-color module-fg #D3D3D3;
+@define-color workspaces #0047AB;
 
-@define-color cpuinfo #1e2030;
-@define-color memory #2e2f45;
-@define-color cpu #363a4f;
+@define-color cpuinfo #0047AB;
+@define-color memory #4682BF;
+@define-color cpu #5670BF;
 @define-color distro-fg #000000;
-@define-color distro-bg #8aadf4;
-@define-color time #363a4f;
-@define-color date #2e2f45;
-@define-color tray #1e2030;
+@define-color distro-bg #B11226;
+@define-color time #5670BF;
+@define-color date #4682BF;
+@define-color tray #0047AB;
 
-@define-color pulseaudio #1e2030;
-@define-color backlight #2e2f45;
-@define-color battery #363a4f;
-@define-color power #8aadf4;
+@define-color pulseaudio #0047AB;
+@define-color backlight #4682BF;
+@define-color battery #5670BF;
+@define-color power #4682BF;
 
 /* State Colors */
 
