@@ -42,4 +42,4 @@ alias n='nvim'
 alias bee='yay -S'
 set -x XCURSOR_THEME rose-pine-hyprcursor
 set -x XCURSOR_SIZE 24
-
+fastfetch
