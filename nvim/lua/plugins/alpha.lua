@@ -8,7 +8,7 @@ return {
 
       -- Custom ASCII Art Header
       dashboard.section.header.val = {
-
+        "                                ",
         "           ▄▄▄▄▄▄▄▄▄            ",
         "        ▄█████████████▄          ",
         "█████  █████████████████  █████  ",
