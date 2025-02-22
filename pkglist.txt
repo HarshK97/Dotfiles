@@ -1,0 +1,28 @@
+# System utilities
+fish
+neovim
+tmux
+fastfetch
+starship
+bat
+fzf
+ripgrep
+
+# Development tools
+git
+
+# GUI apps
+firefox
+kitty
+waybar
+rofi
+spicetify-cli
+plymouth
+swaync
+wlogout
+cava
+hyprpaper
+hyprlock
+
+# AUR Helpers
+yay
