@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyAE1ac3Z9jwLsyz4j9BoOcFGlNsXItrhu8"; // Replace with your API key
+const API_KEY = "APIKEY"; // Replace with your API key
 const API_URL = `https://safebrowsing.googleapis.com/v4/threatMatches:find?key=${API_KEY}`;
 
 async function checkURL(url) {
