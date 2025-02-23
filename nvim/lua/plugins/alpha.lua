@@ -6,6 +6,18 @@ return {
       local alpha = require "alpha"
       local dashboard = require "alpha.themes.dashboard"
 
+      dashboard.opts.layout = {
+        { type = "padding", val = 2 }, -- Adjust this number to reduce top space
+        dashboard.section.header,
+        { type = "padding", val = 3 }, -- Space between header and buttons
+        dashboard.section.buttons,
+        {
+          type = "padding",
+          val = 3,
+        },
+        dashboard.section.footer,
+      }
+
       -- Custom ASCII Art Header
       dashboard.section.header.val = {
         "                                ",
@@ -33,12 +45,12 @@ return {
 
       -- Custom Dashboard Buttons
       dashboard.section.buttons.val = {
-        dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
-        dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
-        dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
-        dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
-        dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.vim<CR>"),
-        dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
+        dashboard.button("f", "󰱼  Find file", ":Telescope find_files <CR>"),
+        dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
+        dashboard.button("r", "  Recent files", ":Telescope oldfiles <CR>"),
+        dashboard.button("t", "󰺮  Find text", ":Telescope live_grep <CR>"),
+        dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua<CR>"),
+        dashboard.button("q", "󰅙  Quit Neovim", ":qa<CR>"),
       }
       local quotes = {
         "Freedom is the right of all sentient beings. - Optimus Prime",
