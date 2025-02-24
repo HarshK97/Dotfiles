@@ -3,8 +3,8 @@ return {
     "goolord/alpha-nvim",
     event = "VimEnter",
     config = function()
-      local alpha = require "alpha"
-      local dashboard = require "alpha.themes.dashboard"
+      local alpha = require("alpha")
+      local dashboard = require("alpha.themes.dashboard")
 
       dashboard.opts.layout = {
         { type = "padding", val = 2 }, -- Adjust this number to reduce top space
@@ -45,12 +45,12 @@ return {
 
       -- Custom Dashboard Buttons
       dashboard.section.buttons.val = {
-        dashboard.button("f", "󰱼  Find file", ":Telescope find_files <CR>"),
-        dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
-        dashboard.button("r", "  Recent files", ":Telescope oldfiles <CR>"),
-        dashboard.button("t", "󰺮  Find text", ":Telescope live_grep <CR>"),
-        dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua<CR>"),
-        dashboard.button("q", "󰅙  Quit Neovim", ":qa<CR>"),
+        dashboard.button("e", "  > New File", "<cmd>ene<CR>"),
+        dashboard.button("SPC ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
+        dashboard.button("SPC ff", "󰱼  > Find File", "<cmd>Telescope find_files<CR>"),
+        dashboard.button("SPC fs", "  > Find Word", "<cmd>Telescope live_grep<CR>"),
+        dashboard.button("SPC wr", "󰁯  > Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
+        dashboard.button("q", "  > Quit NVIM", "<cmd>qa<CR>"),
       }
       local quotes = {
         "Freedom is the right of all sentient beings. - Optimus Prime",
