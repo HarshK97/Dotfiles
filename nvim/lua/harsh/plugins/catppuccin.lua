@@ -7,8 +7,13 @@ return {
     config = function()
       require("catppuccin").setup({
         flavour = "mocha",
+        integrations = {
+          mason = true,
+          noice = true,
+          notify = true,
+        },
+        vim.cmd.colorscheme("catppuccin"),
       })
-      vim.cmd.colorscheme("catppuccin")
     end,
   },
 }

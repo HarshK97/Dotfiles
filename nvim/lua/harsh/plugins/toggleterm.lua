@@ -12,12 +12,6 @@ return {
         "<cmd>lua require('toggleterm').toggle()<CR>",
         { noremap = true, silent = true }
       ),
-      vim.api.nvim_set_keymap(
-        "t",
-        "<C-q>",
-        "<cmd>lua require('toggleterm').close()<CR>",
-        { noremap = true, silent = true }
-      ),
     })
   end,
 }

@@ -39,7 +39,14 @@ set -g fish_greeting ''
 eval (zoxide init fish | source)
 
 alias n='nvim'
-alias bee='yay -S'
+function bee
+    if test (count $argv) -gt 0
+        gh copilot $argv
+    else
+        yay -S
+    end
+end
+
 set -x XCURSOR_THEME rose-pine-hyprcursor
 set -x XCURSOR_SIZE 24
 
