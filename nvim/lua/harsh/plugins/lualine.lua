@@ -33,7 +33,7 @@ return {
         globalstatus = true,
       },
       sections = {
-        lualine_a = { { "mode", icon = "󰚩 " } }, -- JetBrains Emoji
+        lualine_a = { { "mode", icon = " " } }, -- JetBrains Emoji
         lualine_b = { { "branch", icon = "" }, "diff", "diagnostics" },
         lualine_c = { { "filename", icon = "󰈙" } },
         lualine_x = { "filetype" },

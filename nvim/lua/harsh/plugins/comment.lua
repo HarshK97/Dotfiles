@@ -1,19 +1,19 @@
 return {
   "numToStr/Comment.nvim",
-  event = { "BufReadPre", "BufNewFile" },
-  dependencies = {
-    "JoosepAlviste/nvim-ts-context-commentstring",
-  },
+  opts = {},
+
   config = function()
-    -- import comment plugin safely
-    local comment = require("Comment")
+    require("Comment").setup()
+    -- Correct way to set keymaps
+    vim.keymap.set("n", "<leader>/", function()
+      return vim.v.count == 0 and "<Plug>(comment_toggle_linewise_current)" or "gcc"
+    end, { expr = true, noremap = true, silent = true, desc = "Toggle Comment" })
 
-    local ts_context_commentstring = require("ts_context_commentstring.integrations.comment_nvim")
-
-    -- enable comment
-    comment.setup({
-      -- for commenting tsx, jsx, svelte, html files
-      pre_hook = ts_context_commentstring.create_pre_hook(),
-    })
+    vim.keymap.set(
+      "v",
+      "<leader>/",
+      "<Plug>(comment_toggle_linewise_visual)",
+      { noremap = true, silent = true, desc = "Toggle Comment" }
+    )
   end,
 }
