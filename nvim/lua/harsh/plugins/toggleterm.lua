@@ -10,7 +10,7 @@ return {
         "n",
         "<leader>tt",
         "<cmd>lua require('toggleterm').toggle()<CR>",
-        { noremap = true, silent = true }
+        { noremap = true, silent = true, desc = "Toggle Terminal" }
       ),
     })
   end,

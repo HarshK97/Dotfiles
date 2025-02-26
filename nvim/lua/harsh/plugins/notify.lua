@@ -16,4 +16,5 @@ return {
     level = "WARN",
   }),
   vim.api.nvim_set_keymap("n", "<leader>nn", ":Telescope notify <CR>", { noremap = true, silent = true }),
+  vim.keymap.set("n", "<leader>n", "<cmd>Notify<cr>", { desc = " Notification" }),
 }

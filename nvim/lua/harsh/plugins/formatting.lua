@@ -35,5 +35,6 @@ return {
         timeout_ms = 1000,
       })
     end, { desc = "Format file or range (in visual mode)" })
+    vim.keymap.set({ "n", "v" }, "<leader>m", "", { desc = "Format file or range (in visual mode)" })
   end,
 }

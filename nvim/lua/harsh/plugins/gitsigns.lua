@@ -44,4 +44,5 @@ return {
       map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>", "Gitsigns select hunk")
     end,
   },
+  vim.keymap.set("n", "<leader>h", "lol<CR>", { desc = " Gitsigns" }),
 }

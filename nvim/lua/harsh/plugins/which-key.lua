@@ -7,7 +7,28 @@ return {
   end,
   opts = {
     -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
+    plugins = {
+      presets = {
+        operators = false,
+        motions = false,
+        text_objects = false,
+        windows = false,
+        nav = false,
+        z = false,
+        g = false,
+      },
+    },
+    icons = {
+      breadcrumb = "»",
+      separator = "➜",
+    },
+    layout = {
+      height = { min = 4, max = 25 },
+      width = { min = 20, max = 50 },
+      spacing = 3,
+      align = "left",
+    },
+    show_help = true,
+    show_keys = false,
   },
 }

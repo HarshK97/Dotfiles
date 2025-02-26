@@ -130,4 +130,6 @@ return {
       end,
     })
   end,
+
+  vim.keymap.set("n", "<leader>c", "<cmd>CodeActionMenu<CR> ", { desc = " Code Actions and Copilot" }),
 }

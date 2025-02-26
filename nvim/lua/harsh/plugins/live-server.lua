@@ -9,4 +9,5 @@ return {
 
   vim.api.nvim_set_keymap("n", "<leader>ls", ":LiveServerStart <CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<leader>lq", ":LiveServerStop <CR>", { noremap = true, silent = true }),
+  vim.keymap.set("n", "<leader>l", "lol<CR>", { desc = " Lazygit and Live Server" }),
 }
