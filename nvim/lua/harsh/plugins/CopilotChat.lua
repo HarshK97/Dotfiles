@@ -19,7 +19,8 @@ return {
       end
 
       copilot_chat.setup({
-        debug = true, -- Enable debug logging
+        debug = false, -- Enable debug logging
+        notify = false,
       })
 
       vim.keymap.set("n", "<leader>cc", function()
@@ -29,6 +30,10 @@ return {
           end
         end)
       end, { desc = "Copilot Chat prompt" })
+
+      vim.keymap.set("n", "<leader>ct", function()
+        copilot_chat.toggle()
+      end, { desc = "Toggle Copilot Chat" })
     end,
   },
 }
