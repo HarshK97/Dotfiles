@@ -1,5 +1,5 @@
 return {
-  "rcarriage/notify.nvim",
+  "rcarriga/nvim-notify",
   require("notify").setup({
     stages = "fade_in_slide_out",
     timeout = 1000,
@@ -13,6 +13,7 @@ return {
       TRACE = "✎",
     },
     -- Set the level to "ERROR" to only show error notifications
-    level = "ERROR",
+    level = "WARN",
   }),
+  vim.api.nvim_set_keymap("n", "<leader>nn", ":Telescope notify <CR>", { noremap = true, silent = true }),
 }
