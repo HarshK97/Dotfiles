@@ -2,7 +2,7 @@
 theme = catppuccin-mocha
 
 # Font
-font-family = Fira Code 16
+font-family = Fira Code 20
 
 # shaders
 custom-shader = "~/.config/ghostty/shaders/starfied-color.glsl"
