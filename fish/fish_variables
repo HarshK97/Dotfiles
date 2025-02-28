@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dcolor\x3dbg\x2b\x3a\x23313244\x2cbg\x3a\x231e1e2e\x2cspinner\x3a\x23f5e0dc\x2chl\x3a\x23f38ba8\x20\x2d\x2dcolor\x3dfg\x3a\x23cdd6f4\x2cheader\x3a\x23f38ba8\x2cinfo\x3a\x23cba6f7\x2cpointer\x3a\x23f5e0dc\x20\x2d\x2dcolor\x3dmarker\x3a\x23b4befe\x2cfg\x2b\x3a\x23cdd6f4\x2cprompt\x3a\x23cba6f7\x2chl\x2b\x3a\x23f38ba8\x20\x2d\x2dcolor\x3dselected\x2dbg\x3a\x2345475a\x20\x2d\x2dmulti
 SETUVAR --export NVM_DIR:/home/optimus/\x2envm
 SETUVAR --export --path PATH:/home/optimus/\x2elocal/share/nvim/mason/bin\x1e/home/optimus/\x2elocal/share/nvm/v20\x2e18\x2e3/bin\x1e/home/optimus/\x2elocal/share/gem/ruby/3\x2e3\x2e0/bin\x1e/usr/lib/ruby/gems/3\x2e3\x2e0/bin\x1e/home/optimus/\x2envm/bin\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl
 SETUVAR --export SSH_AUTH_SOCK:TH_SOCK\x20/tmp/ssh\x2dXXXXXX2sGoJi/agent\x2e42939

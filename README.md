@@ -16,7 +16,7 @@ This repository contains my personal dotfiles for a Transformers-themed Arch Lin
 - Hyprland window manager
 - MechaBar (Custom Waybar implementation)
 - adi1090x's Plymouth boot themes
-- Wofi application launcher
+- Rofi application launcher
 - Transformers-themed UI elements
 - Kitty terminal configuration
 - Swaync notification daemon
