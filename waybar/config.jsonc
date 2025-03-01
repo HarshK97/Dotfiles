@@ -77,9 +77,10 @@
       // == Terminal ==
       "~": "󰊠 Terminal",
       "zsh": "  Terminal",
+      "fish": "󰊠 Terminal",
       "ghostty ~": "󰊠 Terminal",
-      "sejjy@archlinux:(.*)": "  Terminal",
-      "(.*)sejjy@archlinux:~": "  Terminal",
+      "Optimus@Cybertron:(.*)": "  Terminal",
+      "(.*)Optimu@Cybertron:~": "  Terminal",
       "tmux ~": "  Tmux",
       "tmux": "  Tmux",
       // == Browser ==
@@ -91,7 +92,10 @@
       "(.*) - Visual Studio Code": "<span foreground='#89b4fa'>󰨞 </span> $1",
       "(.*)Visual Studio Code": "<span foreground='#89b4fa'>󰨞 </span> Visual Studio Code",
       "nvim": "<span foreground='#a6e3a1'> </span> Neovim",
+      "n": "<span foreground='#a6e3a1'> </span> Neovim",
+      "n ~": "<span foreground='#a6e3a1'> </span> Neovim",
       "nvim (.*)": "<span foreground='#a6e3a1'> </span> $1",
+      "n (.*)": "<span foreground='#a6e3a1'> </span> $1",
       "vim": "<span foreground='#a6e3a1'> </span> Vim",
       "vim (.*)": "<span foreground='#a6e3a1'> </span> $1",
       "Godot": "<span foreground='#89b4fa'> </span> Godot Engine",

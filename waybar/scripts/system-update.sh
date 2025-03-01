@@ -34,7 +34,7 @@ export -f pkg_installed
 # Trigger upgrade
 if [ "$1" == "up" ]; then
   trap 'pkill -RTMIN+20 waybar' EXIT
-ghostty --title="󰞒  System Update" -e bash -c "\"$0\" upgrade; ${aur_helper} -Syu; if pkg_installed flatpak; then flatpak update; fi; printf '\n'; read -p 'Press any key to continue...'"
+  ghostty --title="󰞒  System Update" -e bash -c "\"$0\" upgrade; ${aur_helper} -Syu; if pkg_installed flatpak; then flatpak update; fi; printf '\n'; read -p 'Press any key to continue...'"
 fi
 
 # Check for AUR updates
@@ -83,17 +83,29 @@ total_updates=$((official_updates + aur_updates + flatpak_updates))
 if [ "$aur_helper" == "yay" ]; then
   [ "${1}" == upgrade ] && printf "Official:  %-10s\nAUR ($aur_helper): %-10s\nFlatpak:   %-10s\n\n" "$official_updates" "$aur_updates" "$flatpak_updates" && exit
 
-  tooltip="Official:  $official_updates\nAUR ($aur_helper): $aur_updates\nFlatpak:   $flatpak_updates"
+  tooltip="Official: $official_updates\\nAUR ($aur_helper): $aur_updates\\nFlatpak: $flatpak_updates"
 
 elif [ "$aur_helper" == "paru" ]; then
   [ "${1}" == upgrade ] && printf "Official:   %-10s\nAUR ($aur_helper): %-10s\nFlatpak:    %-10s\n\n" "$official_updates" "$aur_updates" "$flatpak_updates" && exit
 
-  tooltip="Official:   $official_updates\nAUR ($aur_helper): $aur_updates\nFlatpak:    $flatpak_updates"
+  tooltip="Official: $official_updates\\nAUR ($aur_helper): $aur_updates\\nFlatpak: $flatpak_updates"
 fi
 
 # Module and tooltip
 if [ $total_updates -eq 0 ]; then
-  echo "{\"text\":\"󰸟\", \"tooltip\":\"Packages are up to date\"}"
+  if [[ ! -t 1 ]]; then
+    # Output JSON for Waybar (No updates)
+    echo "{\"text\":\"󰸟\", \"tooltip\":\"Packages are up to date\"}"
+  else
+    # Output plain text for Ghostty (No updates)
+    echo -e "󰸟 System is Updated\nOfficial: $official_updates\nAUR ($aur_helper): $aur_updates\nFlatpak: $flatpak_updates"
+  fi
 else
-  echo "{\"text\":\"󰞒\", \"tooltip\":\"${tooltip//\"/\\\"}\"}"
+  if [[ ! -t 1 ]]; then
+    # Output JSON for Waybar (Updates available)
+    echo "{\"text\":\"󰞒\", \"tooltip\":\"Official: $official_updates\\nAUR ($aur_helper): $aur_updates\\nFlatpak: $flatpak_updates\"}"
+  else
+    # Output plain text for Ghostty (Updates available)
+    echo -e "󰞒  Updates Available\nOfficial: $official_updates\nAUR ($aur_helper): $aur_updates\nFlatpak: $flatpak_updates"
+  fi
 fi

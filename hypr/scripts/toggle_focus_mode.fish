@@ -23,6 +23,7 @@ if test "$MODE" = "normal"
     hyprctl keyword windowrulev2  "rounding 0, floating:0, onworkspace:w[tv1]"
     hyprctl keyword windowrulev2  "bordersize 0, floating:0, onworkspace:f[1]"
     hyprctl keyword windowrulev2  "rounding 0, floating:0, onworkspace:f[1]"
+    hyprctl keyword general "gap_in 0, gap_out 0"
     hyprctl dispatch workspace 69
     hyprctl dispatch workspace $current_workspace
     echo "focus" > "$STATE_FILE"
