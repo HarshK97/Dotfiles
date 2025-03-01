@@ -2,6 +2,7 @@
 
 # Check release
 if [ ! -f /etc/arch-release ]; then
+  echo "Not an Arch-based system. Exiting."
   exit 0
 fi
 
@@ -33,16 +34,8 @@ export -f pkg_installed
 # Trigger upgrade
 if [ "$1" == "up" ]; then
   trap 'pkill -RTMIN+20 waybar' EXIT
-  command="
-    $0 upgrade
-    ${aur_helper} -Syu
-    if pkg_installed flatpak; then flatpak update; fi
-    printf '\n'
-    read -n 1 -p 'Press any key to continue...'
-    "
-  kitty --title "󰞒  System Update" sh -c "${command}"
+ghostty --title="󰞒  System Update" -e bash -c "\"$0\" upgrade; ${aur_helper} -Syu; if pkg_installed flatpak; then flatpak update; fi; printf '\n'; read -p 'Press any key to continue...'"
 fi
-
 
 # Check for AUR updates
 if [ -n "$aur_helper" ]; then
@@ -50,7 +43,6 @@ if [ -n "$aur_helper" ]; then
 else
   aur_updates=0
 fi
-
 
 # Check if running in an interactive terminal
 if [[ -t 1 ]]; then

@@ -10,7 +10,6 @@ return {
         integrations = {
           mason = true,
           noice = true,
-          notify = true,
         },
         vim.cmd.colorscheme("catppuccin"),
       })
