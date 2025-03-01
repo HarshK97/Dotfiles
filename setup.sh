@@ -8,15 +8,19 @@ CONFIG_DIR="$HOME/.config"
 CONFIGS=(
   "fish"
   "hypr"
-  "kitty"
+  "ghostty"
   "nvim"
+  "mechabar-rofi"
   "rofi"
   "spicetify"
   "swaync"
+  "swappy"
   "tmux"
   "waybar"
   "wlogout"
-  "wofi"
+  "fastfetch"
+  "yazi"
+  "kitty"
 )
 
 # Function to create symlinks

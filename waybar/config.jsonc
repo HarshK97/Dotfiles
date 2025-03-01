@@ -79,8 +79,8 @@
       "zsh": "  Terminal",
       "fish": "󰊠 Terminal",
       "ghostty ~": "󰊠 Terminal",
-      "Optimus@Cybertron:(.*)": "  Terminal",
-      "(.*)Optimu@Cybertron:~": "  Terminal",
+      "Optimus@Cybertron:(.*)": "󰊠  Terminal",
+      "(.*)Optimu@Cybertron:~": "󰊠  Terminal",
       "tmux ~": "  Tmux",
       "tmux": "  Tmux",
       // == Browser ==

@@ -14,11 +14,14 @@ git
 # GUI apps
 firefox
 kitty
+ghostty
 waybar
 rofi
 spicetify-cli
 plymouth
 swaync
+swappy
+yazi
 wlogout
 cava
 hyprpaper
