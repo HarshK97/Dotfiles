@@ -8,3 +8,4 @@ text_font=JetBrains Nerd Mono
 paint_mode=brush
 early_exit=false
 fill_shape=false
+key_copy=Ctrl+C 
