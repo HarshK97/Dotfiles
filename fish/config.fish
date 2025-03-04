@@ -58,3 +58,7 @@ function y
 	end
 	rm -f -- "$tmp"
 end
+
+set -Ux NPM_CONFIG_PREFIX ~/.npm-global
+fish_add_path ~/.npm-global/bin
+

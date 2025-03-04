@@ -109,3 +109,7 @@ else
     echo -e "󰞒  Updates Available\nOfficial: $official_updates\nAUR ($aur_helper): $aur_updates\nFlatpak: $flatpak_updates"
   fi
 fi
+
+if [ $total_updates -gt 10 ]; then 
+  notify-send "System Update" "There are $total_updates updates available"
+fi

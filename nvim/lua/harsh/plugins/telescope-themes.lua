@@ -4,12 +4,18 @@ return {
     local builtin_schemes = require("telescope.themes").get_dropdown({
       winblend = 10,
       border = true,
-      previewer = false,
+      previewer = true,
       layout_config = {
         width = 0.5,
         height = 0.5,
       },
-      enable_live_preview = true,
+      extensions = {
+        themes = {
+          enable_live_preview = true,
+        },
+      },
     })
+    require("telescope").load_extension("themes")
+    vim.keymap.set("n", "<leader>fm", "<cmd>Telescope themes<cr>", { desc = "Find theme" })
   end,
 }
