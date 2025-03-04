@@ -34,10 +34,11 @@ return {
       vim.keymap.set("n", "<leader>ct", function()
         copilot_chat.toggle()
       end, { desc = "Toggle Copilot Chat" })
+      vim.keymap.set("n", "<leader>cg", "", { desc = "Generate Commit and Tests" })
       vim.keymap.set("n", "<leader>ce", "<cmd>CopilotChatExplain<CR>", { desc = "Explain Selected Code" })
-      vim.keymap.set("n", "<leader>cc", "<cmd>CopilotChatCommit<CR>", { desc = "Commit Selected Code" })
+      vim.keymap.set("n", "<leader>cgc", "<cmd>CopilotChatCommit<CR>", { desc = "Commit Selected Code" })
       vim.keymap.set("n", "<leader>cd", "<cmd>CopilotChatDocs<CR>", { desc = "Documentation for Selected Code" })
-      vim.keymap.set("n", "<leader>cg", "<cmd>CopilotChatTests<CR>", { desc = "Generate Tests for Selected Code" })
+      vim.keymap.set("n", "<leader>cgt", "<cmd>CopilotChatTests<CR>", { desc = "Generate Tests for Selected Code" })
       vim.keymap.set("n", "<leader>cr", "<cmd>CopilotChatReview<CR>", { desc = "Review Code" })
     end,
   },

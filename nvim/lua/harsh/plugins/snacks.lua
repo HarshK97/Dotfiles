@@ -10,8 +10,8 @@ return {
         enabled = true,
         layout = {
           cycle = false,
+          position = "right",
         },
-        position = "right",
       },
       quickfile = {
         enabled = true,
@@ -25,6 +25,15 @@ return {
             filename_first = false,
             filename_only = false,
             icon_width = 2,
+          },
+        },
+        sources = {
+          explorer = {
+            layout = {
+              layout = {
+                position = "right",
+              },
+            },
           },
         },
         layout = {
