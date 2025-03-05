@@ -34,6 +34,7 @@ return {
                 position = "right",
               },
             },
+            auto_close = true,
           },
         },
         layout = {

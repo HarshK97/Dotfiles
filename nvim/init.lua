@@ -1,2 +1,2 @@
-require("harsh.core")
-require("harsh.lazy")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
