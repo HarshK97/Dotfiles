@@ -110,9 +110,9 @@ else
   fi
 fi
 
-if [ $total_updates -gt 30 ]; then
+if [ $total_updates -gt 50 ]; then
   while true; do
     notify-send "System Update" "There are $total_updates updates available"
-    sleep 1800 # Sleep for 30 minutes
+    sleep 3600 # Sleep for 1 Hour
   done &
 fi

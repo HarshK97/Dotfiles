@@ -11,6 +11,7 @@ return {
   { "sainnhe/edge" },
   { "nyoom-engineering/oxocarbon.nvim" },
   { "scottmckendry/cyberdream.nvim" },
+  { "hiroakis/cyberspace.vim" },
   {
     "zaldih/themery.nvim",
     lazy = false,
@@ -20,6 +21,7 @@ return {
         themes = {
           "catppuccin",
           "tokyonight",
+          "cyberspace",
           "cyberdream",
           "dracula",
           "carbonfox",
